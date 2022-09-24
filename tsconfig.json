@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "outDir": "./build",
+        "target": "ES5",
+        "module": "CommonJS",
+        "lib": [
+            "ES6",
+            "DOM"
+        ],
+        "sourceMap": true,
+        "allowJs": true,
+        "jsx": "react",
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "rootDirs": [
+            "src",
+            "webpack",
+        ],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./src/@types"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@src/*":["src/*"],
+            "@images/*":["src/images*"],
+            "@components/*":["src/components*"],
+        },
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "incremental": true,
+        "moduleResolution": "Node",
+        "resolveJsonModule": false,
+    }
+}
